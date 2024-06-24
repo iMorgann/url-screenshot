@@ -8,7 +8,7 @@ To use the API, you will need an API key. You can request an API key by contacti
 
 ### Base URL
 
-The base URL for the API is `https://url-screenshot.onrender.com/`.
+The base URL for the API is `https://url-screenshot-api1.p.rapidapi.com/`.
 
 ### Authentication
 
@@ -21,7 +21,7 @@ To capture a screenshot, send a GET request to the `/screenshot` endpoint with t
 Example:
 
 ```
-GET https://url-screenshot.onrender.com/screenshot?url=https://example.com
+GET https://url-screenshot-api1.p.rapidapi.com/screenshot?url=https://example.com
 ```
 
 ### Response
