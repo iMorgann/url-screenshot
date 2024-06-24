@@ -32,7 +32,9 @@ app.get('/screenshot', async (req, res) => {
   const isMobile = /mobile/i.test(userAgent);
 
   try {
-    const browser = await puppeteer.launch({ args: ['--no-sandbox'] });
+    const browser = await puppeteer.launch({ 
+        headless: 'new',  // Use the new headless mode
+        args: ['--no-sandbox'] });
     const page = await browser.newPage();
 
     if (isMobile) {
